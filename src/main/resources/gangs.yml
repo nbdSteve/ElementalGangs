@@ -6,3 +6,80 @@ who-cmd:
     name-color: '&6'
     separator: '&e, '
   founded-format: "'&6'dd'&e'/'&6'MM'&e'/'&6'yyyy '&7at' '&6'HH'&e':'&6'mm'&e':'&6'ss '&7'z" # This will get set in the gang data file so do not change this once you have released the server
+
+tag-length: # in characters
+  minimum: 3
+  maximum: 10
+
+role-prefix:
+  leader: '***' # '★★★'
+  co-leader: '**' # '★★'
+  moderator: '*' # '★'
+  member: ''
+
+chat-prefix:
+  gang: '&2&l[&a&lGC&2&l] &a{role}&r{player}&7| &f'
+
+default-gang-permissions:
+  leader:
+    - gangs.player.disband
+    - gangs.player.promote
+    - gangs.player.demote
+    - gangs.player.tag
+    - gangs.player.who
+    - gangs.player.list
+    - gangs.player.top
+    - gangs.player.deposit
+    - gangs.player.perms
+    - gangs.player.kick
+    - gangs.player.invite
+    - gangs.chat.gang
+    - gangs.chat.public
+    - gangs.player.view
+    - gangs.player.reject
+  co-leader:
+    - gangs.player.leave
+    - gangs.player.promote
+    - gangs.player.demote
+    - gangs.player.who
+    - gangs.player.list
+    - gangs.player.top
+    - gangs.player.deposit
+    - gangs.player.perms
+    - gangs.player.kick
+    - gangs.player.invite
+    - gangs.chat.gang
+    - gangs.chat.public
+    - gangs.player.view
+    - gangs.player.reject
+  moderator:
+    - gangs.player.leave
+    - gangs.player.who
+    - gangs.player.list
+    - gangs.player.top
+    - gangs.player.deposit
+    - gangs.player.kick
+    - gangs.player.invite
+    - gangs.chat.gang
+    - gangs.chat.public
+    - gangs.player.view
+    - gangs.player.reject
+  member:
+    - gangs.player.leave
+    - gangs.player.who
+    - gangs.player.list
+    - gangs.player.top
+    - gangs.player.deposit
+    - gangs.chat.gang
+    - gangs.chat.public
+    - gangs.player.view
+    - gangs.player.reject
+  no-gang:
+    - gangs.player.create
+    - gangs.player.accept
+    - gangs.player.who
+    - gangs.player.list
+    - gangs.player.top
+    - gangs.chat.public
+    - gangs.player.view
+    - gangs.player.reject

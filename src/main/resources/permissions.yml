@@ -1,0 +1,23 @@
+player:
+  create: gangs.player.create
+  disband: gangs.player.disband
+  invite: gangs.player.invite
+  accept: gangs.player.accept
+  kick: gangs.player.kick
+  leave: gangs.player.leave
+  promote: gangs.player.promote
+  demote: gangs.player.demote
+  list: gangs.player.list
+  who: gangs.player.who
+  chat-gang: gangs.chat.gang
+  chat-public: gangs.chat.public
+  top: gangs.player.top
+  deposit: gangs.player.deposit
+  tag: gangs.player.tag
+  perms: gangs.player.perms
+  view: gangs.player.view
+  reject: gangs.player.reject
+
+command:
+  reload: gangs.command.reload
+  help: gangs.command.help

@@ -1,0 +1,82 @@
+nodes-in-gui:
+  - DISBAND
+  - TAG
+  - PROMOTE
+  - DEMOTE
+  - DEPOSIT
+  - KICK
+  - INVITE
+  - CHAT_GANG
+  - LEAVE
+  - CHAT_PUBLIC
+  - WHO
+  - TOP
+  - ACCEPT
+  - CREATE
+  - VIEW
+  - REJECT
+#
+uneditable-nodes:
+  - LEAVE
+  - CHAT_PUBLIC
+  - WHO
+  - TOP
+  - ACCEPT
+  - CREATE
+  - VIEW
+  - REJECT
+#
+name: '&5&l{role} Permissions'
+type: none
+size: 18
+node-enabled:
+  item: stained_glass_pane
+  data: 5
+  lore:
+    - '&7'
+    - '&7&o((left click to &cREMOVE &7&opermission to &f{role}&7&o)).'
+    - '&7'
+node-disabled:
+  item: stained_glass_pane
+  data: 14
+  lore:
+    - '&7'
+    - '&7&o((left click to &aGRANT &7&opermission to &f{role}&7&o)).'
+    - '&7'
+node-un-editable:
+  item: stained_glass_pane
+  data: 15
+  lore:
+    - '&7'
+    - '&7&o((permission can not be edited&7&o)).'
+    - '&7'
+node-config:
+  name: '&b&l{node-type}'
+  enchantments:
+  item-flags:
+1:
+  slot: 16
+  action: back
+  name: '&c&lBack'
+  material: hdb-7789
+  data: 0
+  lore:
+    - '&7'
+    - '&7&o((left click to return to the perms gui))'
+    - '&7'
+  enchantments:
+  item-flags:
+    - hide_attributes
+2:
+  slot: 17
+  action: close
+  name: '&c&lClose'
+  material: hdb-187
+  data: 0
+  lore:
+    - '&7'
+    - '&7&o((left click to close this gui))'
+    - '&7'
+  enchantments:
+  item-flags:
+    - hide_attributes

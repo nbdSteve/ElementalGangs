@@ -6,7 +6,7 @@ import gg.steve.elemental.gangs.utils.ColorUtil;
 
 public enum ChatType {
     GANG(Files.CONFIG.get().getString("chat-prefix.gang")),
-    PUBLIC(Files.CONFIG.get().getString("chat-prefix.public"));
+    PUBLIC("");
 
     private final String prefix;
 
@@ -16,6 +16,6 @@ public enum ChatType {
 
     public void message(GangPlayer gangPlayer, String message) {
         if (gangPlayer.getChatChannel().equals(ChatType.PUBLIC)) return;
-        gangPlayer.getGang().messageOnlineMembers(ColorUtil.colorize(prefix.replace("{role}", gangPlayer.getRole().getPrefix()).replace("{player}", gangPlayer.getPlayer().getDisplayName()) + message));
+        gangPlayer.getGang().messageOnlinePlayers(ColorUtil.colorize(prefix.replace("{role}", gangPlayer.getRole().getPrefix()).replace("{player}", gangPlayer.getPlayer().getDisplayName()) + message));
     }
 }

@@ -1,0 +1,60 @@
+name: "&5&lElemental's Top Gangs"
+type: none
+size: 27
+gang-item:
+  name: '&5&l{gang}'
+  material: skull_item # this will be the owner's head
+  data: 3
+  lore:
+    - ''
+    - '&f&lGANG TOP POSITION&7| &b&l#{position}'
+    - ''
+    - '&f&lSTATS'
+    - ' &7- Bank| &a${bank}'
+    - ' &7- Online| &6{online-number}&e/&6{total-members}'
+    - ' &7- Founded| {founded}'
+    - ' &7- Owner| &6{owner}'
+  enchantments:
+  item-flags:
+    - hide_attributes
+1:
+  slot: 10
+  gang: 0
+  gang-item: true
+2:
+  slot: 11
+  gang: 1
+  gang-item: true
+3:
+  slot: 12
+  gang: 2
+  gang-item: true
+4:
+  slot: 13
+  gang: 3
+  gang-item: true
+5:
+  slot: 14
+  gang: 4
+  gang-item: true
+6:
+  slot: 15
+  gang: 5
+  gang-item: true
+7:
+  slot: 16
+  gang: 6
+  gang-item: true
+8:
+  slot: 26
+  gang: close
+  name: '&c&lClose'
+  material: hdb-187
+  data: 0
+  lore:
+    - '&7'
+    - '&7&o((left click to close this gui))'
+    - '&7'
+  enchantments:
+  item-flags:
+    - hide_attributes

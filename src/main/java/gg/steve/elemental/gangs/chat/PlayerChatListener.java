@@ -1,17 +1,20 @@
 package gg.steve.elemental.gangs.chat;
 
-import gg.steve.anthem.player.FPlayer;
-import gg.steve.anthem.player.FPlayerManager;
+import gg.steve.elemental.gangs.player.GangPlayer;
+import gg.steve.elemental.gangs.player.GangPlayerManager;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerChatEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 public class PlayerChatListener implements Listener {
 
-    @EventHandler
-    public void playerChat(PlayerChatEvent event) {
-        FPlayer fPlayer = FPlayerManager.getFPlayer(event.getPlayer().getUniqueId());
-        event.setCancelled(true);
-        fPlayer.getChatChannel().message(fPlayer, event.getMessage());
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public void playerChat(AsyncPlayerChatEvent event) {
+        GangPlayer player = GangPlayerManager.getGangPlayer(event.getPlayer().getUniqueId());
+        if (player.getChatChannel().equals(ChatType.GANG)) {
+            event.setCancelled(true);
+            ChatType.GANG.message(player, event.getMessage());
+        }
     }
 }

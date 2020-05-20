@@ -1,0 +1,22 @@
+
+A
+java:S1640H"Convert this Map to an EnumMap.(œ˜¼»ùÿÿÿÿ8²½¾¢.
+A
+java:S1640U"Convert this Map to an EnumMap.(œ˜¼»ùÿÿÿÿ8ÛÙÃ¾¢.
+Q
+java:S2864+"4Iterate over the "entrySet" instead of the "keySet".(ÄœÆÉ8¸ÇÉŒ¢.
+Q
+java:S2864b"4Iterate over the "entrySet" instead of the "keySet".(ÄœÆÉ8îÒæØ¢.
+u	java:S135+"YReduce the total number of break and continue statements in this loop to use at most one.(ÄœÆÉ8¨ÌõØ¢.
+Q
+java:S28644"4Iterate over the "entrySet" instead of the "keySet".(ÄœÆÉ8Ê¤äØ¢.
+<
+java:S1640"Convert this Map to an EnumMap.(šìÇ8©’—¿¢.
+Q
+java:S2864>"4Iterate over the "entrySet" instead of the "keySet".(ÄœÆÉ8¸ÇÉŒ¢.
+u	java:S1354"YReduce the total number of break and continue statements in this loop to use at most one.(ÄœÆÉ8…íôØ¢.
+<
+java:S1640 "Convert this Map to an EnumMap.(šìÇ8¸ÇÉŒ¢.
+Q
+java:S2864k"4Iterate over the "entrySet" instead of the "keySet".(ÄœÆÉ8àÛÊ¾¢.
+u	java:S135>"YReduce the total number of break and continue statements in this loop to use at most one.(ÄœÆÉ8õœ—Ù¢.

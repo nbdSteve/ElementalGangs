@@ -4,3 +4,12 @@ main: gg.steve.elemental.gangs.Gangs
 api-version: 1.13
 authors: [stevegoodhill]
 description: Gangs plugin developed by nbdSteve for ElementalMC
+softdepend:
+  - Vault
+commands:
+  g:
+    usage: /<command>
+    description: Main command for Elemental Gangs.
+    aliases:
+      - gangs
+      - gang

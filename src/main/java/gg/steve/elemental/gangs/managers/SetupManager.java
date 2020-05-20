@@ -1,6 +1,11 @@
 package gg.steve.elemental.gangs.managers;
 
 import gg.steve.elemental.gangs.Gangs;
+import gg.steve.elemental.gangs.chat.PlayerChatListener;
+import gg.steve.elemental.gangs.cmd.GangCmd;
+import gg.steve.elemental.gangs.gui.GuiClickListener;
+import gg.steve.elemental.gangs.listener.PlayerDamageListener;
+import gg.steve.elemental.gangs.player.GangPlayerManager;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 
@@ -26,7 +31,7 @@ public class SetupManager {
     }
 
     public static void registerCommands(Gangs instance) {
-//        instance.getCommand("pack").setExecutor(new PackCmd());
+        instance.getCommand("g").setExecutor(new GangCmd());
     }
 
     /**
@@ -36,5 +41,9 @@ public class SetupManager {
      */
     public static void registerEvents(Plugin instance) {
         PluginManager pm = instance.getServer().getPluginManager();
+        pm.registerEvents(new GangPlayerManager(), instance);
+        pm.registerEvents(new PlayerChatListener(), instance);
+        pm.registerEvents(new PlayerDamageListener(), instance);
+        pm.registerEvents(new GuiClickListener(), instance);
      }
 }

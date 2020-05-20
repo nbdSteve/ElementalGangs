@@ -9,6 +9,9 @@ public enum Files {
     PERMISSIONS("permissions.yml"),
     DEBUG("lang" + File.separator + "debug.yml"),
     MESSAGES("lang" + File.separator + "messages.yml"),
+    TOP_GUI("gui" + File.separator + "top.yml"),
+    PERMS_GUI("gui" + File.separator + "perms.yml"),
+    PERMS_PAGE_GUI("gui" + File.separator + "perms-page.yml"),
     PENDING("gang-data" + File.separator + "pending-requests.yml");
 
     private final String path;
