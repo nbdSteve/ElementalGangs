@@ -87,3 +87,9 @@ reload:
 
 help:
   - '&5&lGangs &f>> &7Please make a detailed help message!'
+
+max-members-joiner:
+  - '&5&lGangs &f>> &7You can not join &e{gang} &7because they already have the maximum amount of members.'
+
+max-members-gang:
+  - '&5&lGangs &f>> &6{player} &7tried to join your gang but can not, you already have the maximum amount of members.'

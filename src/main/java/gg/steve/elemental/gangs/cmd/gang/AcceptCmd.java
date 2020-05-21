@@ -2,6 +2,7 @@ package gg.steve.elemental.gangs.cmd.gang;
 
 import gg.steve.elemental.gangs.core.Gang;
 import gg.steve.elemental.gangs.core.GangManager;
+import gg.steve.elemental.gangs.managers.Files;
 import gg.steve.elemental.gangs.message.CommandDebug;
 import gg.steve.elemental.gangs.message.MessageType;
 import gg.steve.elemental.gangs.permission.PermissionNode;
@@ -41,6 +42,11 @@ public class AcceptCmd {
             return;
         }
         assert gang != null;
+        if (gang.getPlayers().size() >= Files.CONFIG.get().getInt("max-members")) {
+            MessageType.MAX_MEMBERS_JOINER.message(player, gang.getName());
+            MessageType.MAX_MEMBERS_GANG.gangMessage(gang, player.getName());
+            return;
+        }
         GangManager.getRequestManager().removeInviteRequest(gang.getGangId(), player.getPlayerId());
         gang.addPlayer(player.getPlayerId(), Role.MEMBER);
         GangPlayerManager.updateGangPlayer(player.getPlayerId());

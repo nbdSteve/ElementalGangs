@@ -1,0 +1,7 @@
+
+Z
+java:S1874"8Remove this use of "getOfflinePlayer"; it is deprecated.(¬³ûúÿÿÿÿ8»ü–Ø¢.
+W
+java:S1118":Add a private constructor to hide the implicit public one.(úÍä8ÚÀí×¢.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(‘õğˆ8»ü–Ø¢.

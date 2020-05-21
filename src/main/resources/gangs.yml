@@ -11,6 +11,8 @@ tag-length: # in characters
   minimum: 3
   maximum: 10
 
+max-members: 5
+
 role-prefix:
   leader: '***' # '★★★'
   co-leader: '**' # '★★'

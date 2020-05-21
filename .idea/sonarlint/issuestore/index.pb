@@ -99,3 +99,5 @@ o
 ?src/main/java/gg/steve/elemental/gangs/cmd/admin/ReloadCmd.java,d\3\d3eb07feb582fc541c4b241af6e21f9316b9ccc8
 m
 =src/main/java/gg/steve/elemental/gangs/cmd/admin/HelpCmd.java,e\c\ec8623511ff2e4c005d54d0fb06683a8e8a2a22c
+o
+?src/main/java/gg/steve/elemental/gangs/papi/GangsExpansion.java,9\8\983ad9814b0761b52790c0108c2d5fe4573cb4f1

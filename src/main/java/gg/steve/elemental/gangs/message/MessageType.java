@@ -36,6 +36,8 @@ public enum MessageType {
     PROMOTE("promote", "{target}", "{role}", "{player}"),
     DEMOTE("demote", "{target}", "{role}", "{player}"),
     TAG_CHANGE("tag-change", "{player}", "{old}", "{new}"),
+    MAX_MEMBERS_JOINER("max-members-joiner", "{gang}"),
+    MAX_MEMBERS_GANG("max-members-gang", "{player}"),
     // top
     TOP_HEADER("gang-top.header", "{page}"),
     TOP_ENTRY("gang-top.entry", "{rank}", "{gang}", "{bank}"),

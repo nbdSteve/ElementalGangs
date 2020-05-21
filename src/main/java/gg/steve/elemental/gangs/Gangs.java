@@ -5,6 +5,7 @@ import gg.steve.elemental.gangs.core.GangManager;
 import gg.steve.elemental.gangs.managers.FileManager;
 import gg.steve.elemental.gangs.managers.Files;
 import gg.steve.elemental.gangs.managers.SetupManager;
+import gg.steve.elemental.gangs.papi.GangsExpansion;
 import gg.steve.elemental.gangs.player.GangPlayerManager;
 import gg.steve.elemental.gangs.utils.LogUtil;
 import net.milkbowl.vault.economy.Economy;
@@ -34,6 +35,10 @@ public final class Gangs extends JavaPlugin {
         } else {
             LogUtil.info("Unable to find economy instance, disabling economy features.");
             economy = null;
+        }
+        // register placeholders with papi
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            new GangsExpansion(instance).register();
         }
         LogUtil.info("Gangs has successfully loaded, please contact nbdSteve#0583 on discord if there are any issues.");
     }

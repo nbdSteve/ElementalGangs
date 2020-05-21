@@ -1,0 +1,10 @@
+
+p
+java:S1128"NRemove this unused import 'gg.steve.elemental.gangs.player.GangPlayerManager'.(ı¯Ú‰úÿÿÿÿ8şñôı¢.
+N
+java:S1602,",Remove useless curly braces around statement(Ï¹³æúÿÿÿÿ8ïùÏı¢.
+d
+java:S1128"GRemove this unused import 'gg.steve.elemental.gangs.player.GangPlayer'.(Êæ•‰8şñôı¢.
+=	java:S131 ""Add a default case to this switch.(ÅÍü8Ù–Îı¢.
+g
+java:S1301 "KReplace this "switch" statement by "if" statements to increase readability.(ÅÍü8Ù–Îı¢.

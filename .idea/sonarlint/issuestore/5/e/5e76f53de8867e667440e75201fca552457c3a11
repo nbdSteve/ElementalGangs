@@ -1,9 +1,9 @@
 
-f
-java:S1192"IDefine a constant instead of duplicating this literal "{player}" 9 times.(àÙ«8Æ÷À¢.
-j
-java:S1192"HDefine a constant instead of duplicating this literal "{gang}" 11 times.(ÎĞ“øÿÿÿÿ8©ÑÚ¿¢.
+g
+java:S1192"JDefine a constant instead of duplicating this literal "{player}" 10 times.(àÙ«8Æ÷À¢.
 R
-java:S30667"<Lower the visibility of this setter or remove it altogether.(ÇşüØ
+java:S30669"<Lower the visibility of this setter or remove it altogether.(ÇşüØ
+j
+java:S1192"HDefine a constant instead of duplicating this literal "{gang}" 12 times.(ÎĞ“øÿÿÿÿ8©ÑÚ¿¢.
 f
 java:S1192"IDefine a constant instead of duplicating this literal "{target}" 5 times.(àÙ«8ÛôÍØ¢.
