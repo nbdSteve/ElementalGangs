@@ -1,6 +1,7 @@
 package gg.steve.elemental.gangs.papi;
 
 import gg.steve.elemental.gangs.Gangs;
+import gg.steve.elemental.gangs.bank.BankCalculation;
 import gg.steve.elemental.gangs.player.GangPlayer;
 import gg.steve.elemental.gangs.player.GangPlayerManager;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
@@ -44,15 +45,21 @@ public class GangsExpansion extends PlaceholderExpansion {
         GangPlayer gangPlayer = GangPlayerManager.getGangPlayer(player.getUniqueId());
         if (identifier.equalsIgnoreCase("name")) {
             if (gangPlayer.getGang() == null) {
-                return "No Gang";
+                return "None";
             }
             return gangPlayer.getGang().getName();
         }
         if (identifier.equalsIgnoreCase("balance")) {
             if (gangPlayer.getGang() == null) {
-                return "0";
+                return "N/A";
             }
             return Gangs.formatNumber(gangPlayer.getGang().getBank());
+        }
+        if (identifier.equalsIgnoreCase("position")) {
+            if (gangPlayer.getGang() == null) {
+                return "N/A";
+            }
+            return Gangs.formatNumber(BankCalculation.getGangPosition(gangPlayer.getGang()));
         }
         return "debug";
     }

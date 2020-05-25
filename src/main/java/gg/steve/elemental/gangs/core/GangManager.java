@@ -1,6 +1,7 @@
 package gg.steve.elemental.gangs.core;
 
 import gg.steve.elemental.gangs.Gangs;
+import gg.steve.elemental.gangs.bank.BankCalculation;
 import gg.steve.elemental.gangs.managers.Files;
 import gg.steve.elemental.gangs.message.MessageType;
 import gg.steve.elemental.gangs.player.GangPlayer;
@@ -54,6 +55,8 @@ public class GangManager {
         List<UUID> onlineMembers = gang.getOnlinePlayers();
         gangs.remove(gang.getGangId());
         gang.disband();
+        requestManager.disband(gang);
+        BankCalculation.removeGang(gang);
         for (UUID playerId : onlineMembers) {
             MessageType.GANG_DISBAND.message(GangPlayerManager.getGangPlayer(playerId), gang.getName());
             GangPlayerManager.updateGangPlayer(playerId);

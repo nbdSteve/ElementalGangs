@@ -3,8 +3,11 @@ package gg.steve.elemental.gangs.requests;
 import gg.steve.elemental.gangs.core.Gang;
 import gg.steve.elemental.gangs.core.GangManager;
 import gg.steve.elemental.gangs.managers.Files;
+import gg.steve.elemental.gangs.utils.LogUtil;
+import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 
 import java.util.*;
 
@@ -22,6 +25,7 @@ public class RequestManager {
                 for (String player : invite.getStringList(entry)) {
                     UUID playerId = UUID.fromString(player);
                     pendingRequests.get(gangId).get(RequestType.INVITE).add(playerId);
+                    LogUtil.info(playerId + "");
                 }
             }
         }
@@ -100,6 +104,19 @@ public class RequestManager {
                 return GangManager.getGangById(gangId);
         }
         return null;
+    }
+
+    public void disband(Gang gang) {
+        if (pendingRequests.containsKey(gang.getGangId())) {
+            if (pendingRequests.get(gang.getGangId()).containsKey(RequestType.INVITE)) {
+                Files.PENDING.get().set("invite." + gang.getGangId(), null);
+            }
+            if (pendingRequests.get(gang.getGangId()).containsKey(RequestType.KICK)) {
+                Files.PENDING.get().set("kick." + gang.getGangId(), null);
+            }
+            Files.PENDING.save();
+        }
+        pendingRequests.remove(gang.getGangId());
     }
 
     public void saveToFile() {

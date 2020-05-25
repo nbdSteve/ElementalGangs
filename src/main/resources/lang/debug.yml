@@ -1,74 +1,74 @@
 only-players-can-run-command:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7Only players in game can run that command.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7Only players in game can run that command.'
 
 incorrect-arguments:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7Incorrect command arguments.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7Incorrect command arguments.'
 
 gang-does-not-exist:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7That gang does not exist.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7That gang does not exist.'
 
 can-not-accept-invite:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You must leave your current gang using &6/f leave &7first.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You must leave your current gang using &a/f leave &7first.'
 
 no-invite-pending:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You do not have a pending gang invite.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You do not have a pending gang invite.'
 
 invalid-chat-channel:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7That is not a valid chat channel.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7That is not a valid chat channel.'
 
 chat-no-gang:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You must be in a gang to change chat channels.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You must be in a gang to change chat channels.'
 
 create-already-in-gang:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You must leave or disband your current gang first.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You must leave or disband your current gang first.'
 
 gang-already-exists:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7A gang with that name already exists.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7A gang with that name already exists.'
 
 gang-name-invalid:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7The name of your gang is invalid, please do not use special characters.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7The name of your gang is invalid, please do not use special characters.'
 
 player-not-gang-member:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7Only gang members can complete this action.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7Only gang members can complete this action.'
 
 player-not-owner:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7Only the owner of the gang can complete this action.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7Only the owner of the gang can complete this action.'
 
 invalid-tag-length:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7Please ensure your gangs name is between &63 &7and &610 &7characters long.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7Please ensure your gangs name is between &a3 &7and &a10 &7characters long.'
 
 target-does-not-exist:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7That player does not exist and can not be invited to your gang.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7That player does not exist and can not be invited to your gang.'
 
 target-has-not-played:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7That player has not joined the server before and can not be invited.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7That player has not joined the server before and can not be invited.'
 
 target-already-invited:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7That player has already been invited to your gang, please wait for them to &aaccept &7or &cdeny.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7That player has already been invited to your gang, please wait for them to &aaccept &7or &cdeny.'
 
 player-already-gang-member:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You are unable to complete that action whilst you are a gang member, leave your gang first.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You are unable to complete that action whilst you are a gang member, leave your gang first.'
 
 no-gang-invite-pending:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You do not have an invite pending from that gang.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You do not have an invite pending from that gang.'
 
 player-gang-member:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You can not invite that player because they are already a member of your gang.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You can not invite that player because they are already a member of your gang.'
 
 invalid-deposit:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7Please enter a double for the amount you wish to deposit.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7Please enter a double for the amount you wish to deposit.'
 
 invalid-number-of-arguments:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7The number of command arguments you entered is invalid.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7The number of command arguments you entered is invalid.'
 
 target-not-member-of-gang:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You can not perform that action on that player because they are not a member of your gang.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You can not perform that action on that player because they are not a member of your gang.'
 
 target-can-not-be-self:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You can not perform that action on yourself.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You can not perform that action on yourself.'
 
 target-same-or-higher-role:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You can not perform that action on a member who is the same or higher role than you.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You can not perform that action on a member who is the same or higher role than you.'
 
 permission-same-or-higher-rank:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You can not edit those permissions because you are that gang rank.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You can not edit those permissions because you are that gang rank.'

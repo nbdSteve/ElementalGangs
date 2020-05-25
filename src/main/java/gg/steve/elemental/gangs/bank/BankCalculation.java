@@ -7,13 +7,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BankCalculation {
+    private static List<Gang> gangsInOrder;
 
     public static List<Gang> getGangsInBankOrder() {
-        List<Gang> bank = new ArrayList<>();
+        if (gangsInOrder == null) gangsInOrder = new ArrayList<>();
         for (Gang gang : GangManager.getGangs().values()) {
-            bank.add(gang);
+            if (!gangsInOrder.contains(gang)) gangsInOrder.add(gang);
         }
-        bank.sort(new GangComparator());
-        return bank;
+        gangsInOrder.sort(new GangComparator());
+        return gangsInOrder;
+    }
+
+    public static int getGangPosition(Gang gang) {
+        if (gangsInOrder == null || !gangsInOrder.contains(gang)) getGangsInBankOrder();
+        for (int i = 0; i < gangsInOrder.size(); i++) {
+            if (gangsInOrder.get(i).getGangId().equals(gang.getGangId())) return i + 1;
+        }
+        return gangsInOrder.size();
+    }
+
+    public static void removeGang(Gang gang) {
+        if (gangsInOrder == null) getGangsInBankOrder();
+        if (gangsInOrder.contains(gang)) {
+            gangsInOrder.remove(gang);
+            getGangsInBankOrder();
+        }
     }
 }

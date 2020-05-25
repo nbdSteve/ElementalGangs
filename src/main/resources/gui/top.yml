@@ -1,8 +1,8 @@
-name: "&5&lElemental's Top Gangs"
+name: "&b&lElemental's Top Gangs"
 type: none
 size: 27
 gang-item:
-  name: '&5&l{gang}'
+  name: '&b&l{gang}'
   material: skull_item # this will be the owner's head
   data: 3
   lore:
@@ -11,9 +11,9 @@ gang-item:
     - ''
     - '&f&lSTATS'
     - ' &7- Bank| &a${bank}'
-    - ' &7- Online| &6{online-number}&e/&6{total-members}'
+    - ' &7- Online| &b{online-number}&e/&b{total-members}'
     - ' &7- Founded| {founded}'
-    - ' &7- Owner| &6{owner}'
+    - ' &7- Owner| &b{owner}'
   enchantments:
   item-flags:
     - hide_attributes

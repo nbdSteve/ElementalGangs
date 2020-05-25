@@ -1,9 +1,9 @@
-name: "&5&l{gang}'s Permission Setup"
+name: "&b&l{gang}'s Permission Setup"
 type: none
 size: 27
 1:
   slot: 12
-  name: '&d&lCO-LEADER'
+  name: '&f&lCO-LEADER'
   action: CO_LEADER
   material: arrow
   data: 0
@@ -15,7 +15,7 @@ size: 27
   item-flags:
 2:
   slot: 13
-  name: '&d&lMODERATOR'
+  name: '&f&lMODERATOR'
   action: MODERATOR
   material: arrow
   data: 0
@@ -27,7 +27,7 @@ size: 27
   item-flags:
 3:
   slot: 14
-  name: '&d&lMEMBER'
+  name: '&f&lMEMBER'
   action: MEMBER
   material: arrow
   data: 0

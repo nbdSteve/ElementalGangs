@@ -1,26 +1,26 @@
 who-cmd:
   online-format:
-    name-color: '&6'
-    separator: '&e, '
+    name-color: '&b'
+    separator: '&3, '
   offline-format:
-    name-color: '&6'
-    separator: '&e, '
-  founded-format: "'&6'dd'&e'/'&6'MM'&e'/'&6'yyyy '&7at' '&6'HH'&e':'&6'mm'&e':'&6'ss '&7'z" # This will get set in the gang data file so do not change this once you have released the server
+    name-color: '&b'
+    separator: '&3, '
+  founded-format: "'&b'dd'&3'/'&b'MM'&3'/'&b'yyyy '&7at' '&b'HH'&3':'&b'mm'&3':'&b'ss '&7'z" # This will get set in the gang data file so do not change this once you have released the server
 
 tag-length: # in characters
-  minimum: 3
-  maximum: 10
+  minimum: 2
+  maximum: 15
 
-max-members: 5
+max-members: 6
 
 role-prefix:
-  leader: '***' # '★★★'
-  co-leader: '**' # '★★'
-  moderator: '*' # '★'
+  leader: '★★★' # '★★★'
+  co-leader: '★★' # '★★'
+  moderator: '★' # '★'
   member: ''
 
 chat-prefix:
-  gang: '&2&l[&a&lGC&2&l] &a{role}&r{player}&7| &f'
+  gang: '&3&l[&b&lGANG&3&l] &b{role}&r{player} &7» &f'
 
 default-gang-permissions:
   leader:

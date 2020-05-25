@@ -6,7 +6,7 @@
 
     <groupId>gg.steve.elemental</groupId>
     <artifactId>Gangs</artifactId>
-    <version>0.5.3</version>
+    <version>0.5.8</version>
     <packaging>jar</packaging>
 
     <name>Gangs</name>

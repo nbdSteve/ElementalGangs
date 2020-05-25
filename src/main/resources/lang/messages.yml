@@ -1,95 +1,95 @@
 gang-creation:
-  - '&5&lGangs &f>> &7You have created the gang, &6{gang}&7, you are now the proud owner.'
+  - '&b&lGangs &f» &7You have created the gang, &a{gang}&7, you are now the proud owner.'
 
 gang-disband:
-  - '&5&lGangs &f>> &7Your gang, &6{gang}&7, has been disbanded.'
+  - '&b&lGangs &f» &7Your gang, &a{gang}&7, has been disbanded.'
 
 chat-channel-gang:
-  - '&5&lGangs &f>> &7You are now talking in &aGANG &7chat.'
+  - '&b&lGangs &f» &7You are now talking in &aGANG &7chat.'
 
 chat-channel-public:
-  - '&5&lGangs &f>> &7You are now talking in PUBLIC chat.'
+  - '&b&lGangs &f» &7You are now talking in PUBLIC chat.'
 
 insufficient-gang-permission:
-  - '&5&lGangs &f>> &7You do not have the gang permission node (&6{node}&7) required to do that.'
+  - '&b&lGangs &f» &7You do not have the gang permission node (&a{node}&7) required to do that.'
 
 invite:
-  - '&5&lGangs &f>> &6{target} &7has been invited to your gang by &6{player}.'
+  - '&b&lGangs &f» &a{target} &7has been invited to your gang by &a{player}.'
 
 invite-receiver:
-  - '&5&lGangs &f>> &7You have been invited to the gang, &6{gang}&7, by &6{player} &7to accept type &e/g accept {gang}&7.'
+  - '&b&lGangs &f» &7You have been invited to the gang, &a{gang}&7, by &a{player} &7to accept type &f/g accept {gang}&7.'
 
 invite-accept:
-  - '&5&lGangs &f>> &6{target} &7has accepted your invite and is now part of your gang, &6{gang}&7.'
+  - '&b&lGangs &f» &a{target} &7has accepted your invite and is now part of your gang, &a{gang}&7.'
 
 invite-pending:
-  - '&5&lGangs &f>> &7You have &6{number} &7gang invite(s) pending, use &e/g view &7to view them.'
+  - '&b&lGangs &f» &7You have &a{number} &7gang invite(s) pending, use &f/g view &7to view them.'
 
 view-invites:
-  - '&5&lGangs &f>> &7You have pending invite(s) from these gang(s):'
-  - '&e- &6{gangs}'
-  - '&7type &e/g accept <name> &7to join a gang, or &e/g reject <name> &7to remove a request.'
+  - '&b&lGangs &f» &7You have pending invite(s) from these gang(s):'
+  - ' &f- &a{gangs}'
+  - '&7type &f/g accept <name> &7to join a gang, or &f/g reject <name> &7to remove a request.'
 
 reject:
-  - '&5&lGangs &f>> &7You have rejected the invitation from, &6{gang}&7.'
+  - '&b&lGangs &f» &7You have rejected the invitation from, &a{gang}&7.'
 
 reject-receiver:
-  - '&5&lGangs &f>> &6{player} &7has rejected your invitation to join your gang, &6{gang}&7.'
+  - '&b&lGangs &f» &a{player} &7has rejected your invitation to join your gang, &a{gang}&7.'
 
 leave:
-  - '&5&lGangs &f>> &6{player} &7has left your gang, &6{gang}&7.'
+  - '&b&lGangs &f» &a{player} &7has left your gang, &a{gang}&7.'
 
 deposit-success:
-  - "&5&lGangs &f>> &6{player} &7has deposited &a+${deposit} &7into your gang's bank account, new total is &a${total}&7."
+  - "&b&lGangs &f» &a{player} &7has deposited &a+${deposit} &7into your gang's bank account, new total is &a${total}&7."
 
 deposit-failed:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7That deposit has failed, you do not have sufficient funds to deposit that much.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7That deposit has failed, you do not have sufficient funds to deposit that much.'
 
 kick:
-  - '&5&lGangs &f>> &6{target} &7has been kicked from your gang, &6{gang}&7, by &6{player}&7.'
+  - '&b&lGangs &f» &a{target} &7has been kicked from your gang, &a{gang}&7, by &a{player}&7.'
 
 offline-kick:
-  - '&5&lGangs &f>> &7While you were offline you have were kicked from the gang, &6{gang}&7.'
+  - '&b&lGangs &f» &7While you were offline you have were kicked from the gang, &a{gang}&7.'
 
 damage-gang-member:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You can not damage fellow gang members.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You can not damage fellow gang members.'
 
 promote:
-  - '&5&lGangs &f>> &6{target} &7has been promoted to &e{role} &7by &7{player}&7.'
+  - '&b&lGangs &f» &a{target} &7has been promoted to &f{role} &7by &7{player}&7.'
 
 demote:
-  - '&5&lGangs &f>> &6{target} &7has been demoted to &e{role} &7by &6{player}&7.'
+  - '&b&lGangs &f» &a{target} &7has been demoted to &f{role} &7by &a{player}&7.'
 
 tag-change:
-  - '&5&lGangs &f>> &6{player} &7has changed the name of your gang, &6{old}&7, to, &6{new}&7.'
+  - '&b&lGangs &f» &a{player} &7has changed the name of your gang, &a{old}&7, to, &a{new}&7.'
 
 gang-top:
   header:
     - '&7&m------------------------------------------'
-    - "&5&lElemental's Top Gangs &7#{page}"
+    - "&b&lElemental's Top Gangs &7#{page}"
   entry:
-    - '&e#{rank} &6&l{gang}&7| &a${bank}'
+    - '&3#{rank} &7» &f&l{gang}&7| &a${bank}'
   footer:
     - '&7&m------------------------------------------'
 
 gang-who:
-  - '&7&m<----------------&r &6&l{gang} &7&m---------------->'
-  - '&fFounded&7| {founded}'
-  - '&fBank&7| &a${bank}'
-  - '&fOnline &7(&e{online-number}&7/&e{total-members}&7)| &6{online}'
-  - '&fOffline &7(&e{offline-number}&7/&e{total-members}&7)| &6{offline}'
+  - '&7&m<----------------&r &b&l{gang} &7&m---------------->'
+  - '&3Founded&7| {founded}'
+  - '&3Bank&7| &a${bank}'
+  - '&3Online &7(&b{online-number}&7/&b{total-members}&7)| &f{online}'
+  - '&3Offline &7(&b{offline-number}&7/&b{total-members}&7)| &f{offline}'
 
 permission-debug:
-  - '&5&lGangs &4(&c&lERROR&4) &f>> &7You do not have the required permission (&6{node}&7) to use that command.'
+  - '&b&lGangs &4(&c&lERROR&4) &f» &7You do not have the required permission (&a{node}&7) to use that command.'
 
 reload:
-  - '&5&lGangs &f>> &7You have successfully reloaded all of the configuration files and internal maps for the plugin.'
+  - '&b&lGangs &f» &7You have successfully reloaded all of the configuration files and internal maps for the plugin.'
 
 help:
-  - '&5&lGangs &f>> &7Please make a detailed help message!'
+  - '&b&lGangs &f» &7Please make a detailed help message!'
 
 max-members-joiner:
-  - '&5&lGangs &f>> &7You can not join &e{gang} &7because they already have the maximum amount of members.'
+  - '&b&lGangs &f» &7You can not join &f{gang} &7because they already have the maximum amount of members.'
 
 max-members-gang:
-  - '&5&lGangs &f>> &6{player} &7tried to join your gang but can not, you already have the maximum amount of members.'
+  - '&b&lGangs &f» &a{player} &7tried to join your gang but can not, you already have the maximum amount of members.'

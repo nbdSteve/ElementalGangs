@@ -26,7 +26,7 @@ uneditable-nodes:
   - VIEW
   - REJECT
 #
-name: '&5&l{role} Permissions'
+name: '&b&l{role} Permissions'
 type: none
 size: 18
 node-enabled:
